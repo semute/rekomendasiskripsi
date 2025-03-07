@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Hasil Rekomendasi</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Hasil Rekomendasi</h1>
+        <p class="nim">{{ nim }}</p>
+        
+        {% if rekomendasi %}
+        <div class="result-box" style="padding: 20px; margin-bottom: 20px;">
+            <h2 class="subtitle">Judul Skripsi</h2>
+            <ol class="skripsi-list">
+                {% for row in rekomendasi %}
+                <li>{{ row["Title"] }}</li>
+                {% if not loop.last %}
+                <hr class="separator">
+                {% endif %}
+                {% endfor %}
+            </ol>
+        </div>
+        {% else %}
+        <p class="no-result" style="font-weight: bold; color: red;">Tidak ada rekomendasi untuk NIM ini.</p>
+        {% endif %}
+
+        <button class="back-button" onclick="window.location.href='/'">Back</button>
+    </div>
+</body>
+</html>

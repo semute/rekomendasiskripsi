@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #023880;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(115, 141, 200, 0.7);
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #023880;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
+
+.description {
+    font-size: 14px;
+    color: #ffffff;
+    width: 60%;
+    margin: 20px auto;
+    position: absolute;
+    left: 50%;
+    top:85%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nim {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.result-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #023880;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skripsi-list {
+    list-style: decimal inside;
+    color: #023880;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.skripsi-list li {
+    color: #023880;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.no-result {
+    font-size: 16px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #023880;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #e6e6e6;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
