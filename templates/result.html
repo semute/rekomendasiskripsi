@@ -16,7 +16,8 @@
             <h2 class="subtitle">Judul Skripsi</h2>
             <ol class="skripsi-list">
                 {% for row in rekomendasi %}
-                <li>{{ row["Title"] }}</li>
+                <li><strong>{{ row["Pembimbing"] }}</strong></li>
+                <li>Kata Kunci: {{ row["Keywords"] }}</li>
                 {% if not loop.last %}
                 <hr class="separator">
                 {% endif %}
